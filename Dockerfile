@@ -1,4 +1,3 @@
-FROM  devopsedu/webapp
-VOLUME ["/PROJECT1VOLUME"]
+FROM devopsedu/webapp
 WORKDIR /var/www/html
-COPY website/* /var/www/html
+CMD ["/usr/sbin/apachectl", "-D", "FOREGROUND"]
